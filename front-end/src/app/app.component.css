@@ -1,0 +1,32 @@
+.container{
+    width: 70%;
+    height: 200px;
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-bottom: 3rem;
+    background: #00FF13;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container2{
+    width: 30%;
+    margin-left: 20%;
+}
+h1{
+    padding-top: 3%;
+    padding-left: 5%;
+    color: white;
+    font-size: 74px;
+    float:left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+img{
+    width: 200px;
+    height: 150px;
+    float: right;
+    padding-top: 3%;
+    padding-right: 5%;
+}
+input{
+    float: right;
+}

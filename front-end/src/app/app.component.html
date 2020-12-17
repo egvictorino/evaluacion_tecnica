@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>Green Leaves</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+      input{
+        border-top: none;
+        border-left: none;
+        border-right: none;
+      }
+  
+        input:focus{
+          outline: none;
+      }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Green Leaves</h1>
+   <img src="https://drive.google.com/uc?id=1cN1Od02b_ixPvCEhGhBnZkFxz0jEXfNU"/>
+  </div>
+  <div class="container2">
+    <form [formGroup]="form" (ngSubmit)="enviar(form.value)">
+      Nombre:<input formControlName="nombre" type="text"  /><br /><br/>
+      E-mail:<input formControlName="email" type="text"  /><div *ngIf="form.get('email').hasError('email') && form.get('email').hasError('required') && form.get('email').touched">Es necesario ingresar un email valido</div><br /><br/>
+      Teléfono:<input formControlName="telefono" type="text"  /><br /><br/>
+      Fecha:<input formControlName="fecha" type="text"  /><br /><br/>
+      Ciudad y Estado:<input formControlName="ciudad" type="text"  /><br /><br/>
+      <button [disabled]="form.invalid" type="submit">Enviar</button>
+    </form>
+  </div>
+</body>
+</html>
